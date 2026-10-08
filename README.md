@@ -3,95 +3,44 @@ Intro Repo for Mentees containing information on getting started with git
 
 [Video on creating VM](https://vimeo.com/1231025259/94fdee604d?fl=ip&fe=ec&share=copy)
 
-
 # Git Cheat Sheet
 
-## Daily Workflow
-```bash
-git pull
-git status
-git add .
-git commit -m "Description of change"
-git push
-```
 
-## Status
-```bash
-git status
-```
+## Check changes made and commit or restore them
 
-## Pull Latest Changes
-```bash
-git pull
-git pull origin main
-```
-
-## Add Files
-```bash
-git add file.txt
-git add .
-git add -A
-```
-
-## Commit Changes
-```bash
-git commit -m "Description of change"
-```
-
-## Push Changes
-```bash
-git push
-git push origin main
-```
+|Command|Description|
+|---|---|
+|git status|Shows branch you are on and status of changes|
+|git diff --name-only|Show the names of all items changed|
+|git diff|Shows all changes made in detail|
+|git diff /path/to/item|Shows changes to that specific item|
+|git add -A|Add all changes to staged files|
+|git restore --staged \<filename\>|remove \<filename\> from staged files|
+|git restore \<filename\>|Put the \<filename\> item back to the way it was during last commit|
+|git commit -a|Commit all staged items and take you to a comment and accept item that<br>when saved actually commits.|
 
 ## Branches
 
-### Show Branches
-```bash
-git branch
-git branch -a
-```
+|Command|Description|
+|---|---|
+|git branch -a|Show all the branches here and remote|
+|git switch <existing_branch>|switch to an existing branch like main|
+|git switch -c <new_branch>|Create then switch to the new_branch|
+|git merge <branch_name>|Merge the branch_name into the branch I am currently on|
+|git branch -d <branchname>| delete the branch_name|
 
-### Create Branch
-```bash
-git checkout -b my-feature
-# or
-git switch -c my-feature
-```
-
-### Change Branch
-```bash
-git checkout main
-# or
+### Typical merge sequence
+```text
 git switch main
+git pull
+git merge <branchname>
+git push
+git branch -d <branchname>
 ```
 
-### Delete Branch
-```bash
-git branch -d my-feature
-git branch -D my-feature
-```
-
-## Restore / Undo
-
-### Restore File
-```bash
-git restore file.txt
-```
-
-### Unstage File
-```bash
-git restore --staged file.txt
-```
-
-### Restore Everything
-```bash
-git restore .
-```
-
-### Undo Last Commit (Keep Changes)
-```bash
-git reset --soft HEAD~1
-```
-
-### Undo Last Commit (Discard Changes
+## Logs and history
+|Command|Description|
+|---|---|
+|git log|Show log for the current branch|
+|git log --oneline|Give first line of commit message only|
+|git log --stat|Show log along with items impacted by commit|
