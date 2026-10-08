@@ -5,8 +5,7 @@ Intro Repo for Mentees containing information on getting started with git
 
 # Git Cheat Sheet
 
-
-## Check changes made and commit or restore them
+### Check changes made and commit or restore them
 
 |Command|Description|
 |---|---|
@@ -16,20 +15,20 @@ Intro Repo for Mentees containing information on getting started with git
 |git diff /path/to/item|Shows changes to that specific item|
 |git add -A|Add all changes to staged files|
 |git restore --staged \<filename\>|remove \<filename\> from staged files|
-|git restore \<filename\>|Put the \<filename\> item back to the way it was during last commit|
-|git commit -a|Commit all staged items and take you to a comment and accept item that<br>when saved actually commits.|
+|git restore \<filename\>|Put \<filename\> back to the way it was during last commit|
+|git commit -a|Commit all staged items and go to comment and accept screen that commits if saved|
 
-## Branches
+### Branches
 
 |Command|Description|
 |---|---|
 |git branch -a|Show all the branches here and remote|
-|git switch <existing_branch>|switch to an existing branch like main|
-|git switch -c <new_branch>|Create then switch to the new_branch|
-|git merge <branch_name>|Merge the branch_name into the branch I am currently on|
-|git branch -d <branchname>| delete the branch_name|
+|git switch \<existing_branch\>|switch to an \<existing_branch\> like main|
+|git switch -c \<new_branch\>|Create then switch to the \<new_branch\>|
+|git merge \<branch_name\>|Merge the \<branch_name\> into the branch I am currently on|
+|git branch -d \<branchname\>| delete the \<branch_name\>|
 
-### Typical merge sequence
+#### Typical merge sequence
 ```text
 git switch main
 git pull
@@ -38,7 +37,7 @@ git push
 git branch -d <branchname>
 ```
 
-## Logs and history
+### Logs and history
 |Command|Description|
 |---|---|
 |git log|Show log for the current branch|
