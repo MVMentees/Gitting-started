@@ -17,6 +17,8 @@ Intro Repo for Mentees containing information on getting started with git
 |git restore --staged \<filename\>|remove \<filename\> from staged files|
 |git restore \<filename\>|Put \<filename\> back to the way it was during last commit|
 |git commit -a|Commit all staged items and go to comment and accept screen that commits if saved|
+|git push|Push changes to the github repo|
+|git pull|Pull changes from the github repo|
 
 ### Branches
 
