@@ -106,22 +106,11 @@ IPv4    Manual      Address   192.168.56.2    Netmask 255.255.255.0      Gateway
 
 	`sudo dnf -y install docker git telnet`
 
-4. Create dockers directory
-
-	`mkdir -m777 /home/dockeradmin/dockers`
-	
-	Put each docker build in a separate sub-folder
-        Leave the zips for them in the dockers directory
-
-5. Create a directory for the docker files on the host
-	
-	`mkdir -m777 /home/dockeradmin/PBD`  \(for Pickleball Docker\)
-
-6. Add ssh key to be able to communicate with github later
+4. Add ssh key to be able to communicate with github later
 
 	`ssh-keygen -t rsa` Just press return through all the prompts.
 
-6. Reboot system for changes to take affect
+5. Reboot system for changes to take affect
 
 	`sudo shutdown -r now`
 	
@@ -132,14 +121,6 @@ Connect to the new VM GUI and run Firefox [fire Icon on the bottom left]  Click 
 	Login to github in Firefox on the Docker VM https://github.com/login
 
 	You may need to register with your email the first time
-
-## Download the Pickleball Docker build zip
-
-`https://github.com/MVMentees/MV-Dockers/blob/main/build_universe-pickleball.zip`
-
-Click the download icon on the right side of the grey highlighted bar
-
-This download the file to the /home/dockeradmin/Downloads directory
 
 ## Add the VM Docker ssh key to your github
 
@@ -158,40 +139,6 @@ This download the file to the /home/dockeradmin/Downloads directory
                         Paste key from copy above
 			[Add SSH key]
 	```
-
-## Load Pickleball Repo
-
-Add Pickleball repo to your home directory
-
-Login to the Docker VM with putty or use terminal from the GUI desktop
-
-`git clone git@github.com:MVMentees/Pickleball.git`
-
-## Create the docker for universe-pickleball
-
-Copy the docker zip to the dockers directory
-
-	`cp /home/dockeradmin/Downloads/build_universe-pickleball.zip /home/dockersadmin/dockers/.`
-
-Make the directory for the universe-pickleball docker build
-
-	`mkdir -m777 /home/dockeradmin/dockers/universe-pickleball`
-
-Unzip the zip file
-
-	`cd /home/dockeradmin/dockers/universe-pickleball`
-	`unzip ../build_universe-pickleball.zip`
-
-Add the UniVerse TE release
-
-    This has to be requested here and they will email it to you.   Either using scp or winscp or using a email client using Firefox, you need to get the UVTE...zip file into this same directory.
-
-Build the docker image
-
-	`docker build -t universe-pickleball .`
-
-	See the readme for details on how to run the new docker image
-	
 
 
 
