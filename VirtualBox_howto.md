@@ -14,7 +14,7 @@
 
 After the install is complete, you have to answer it installed correctly
 
-# Creat Virtual Machine for Docker
+# Create Virtual Machine for Docker
 
 ## Add New virtual Machine
 
