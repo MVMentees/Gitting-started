@@ -142,14 +142,3 @@ Connect to the new VM GUI and run Firefox [fire Icon on the bottom left]  Click 
                         Paste key from copy above
 			[Add SSH key]
 	```
-
-
-
-
-
-
-
-
-	
-
-
