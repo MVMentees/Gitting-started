@@ -23,15 +23,19 @@
 	`sudo systemctl disable firewalld.service`
 	`sudo systemctl stop firewalld.service`
 
-3. Load docker, git and telnet
+3. Load packages not in Rocky 9 default
 
-	`sudo dnf -y install docker git telnet`
+   ```
+   sudo dnf install -y epel-release
+   sudo dnf install -y podman-compose
+   sudo dnf -y install docker git telnet`
+   ```
 
-4. Add ssh key to be able to communicate with github later
+5. Add ssh key to be able to communicate with github later
 
 	`ssh-keygen -t rsa` Just press return through all the prompts.
 
-5. Reboot system for changes to take affect
+6. Reboot system for changes to take affect
 
 	`sudo shutdown -r now`
 	
