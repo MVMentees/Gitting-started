@@ -40,6 +40,14 @@
 6. Reboot system for changes to take affect
 
 	`sudo shutdown -r now`
+
+7. Assure selinux is disabled
+
+   `cat /etc/sysconfig/selinux`
+
+   Assure it is now SELINUX=disabled
+
+   If not, vi the item and change it to that
 	
 ## Setup GitHub
 
