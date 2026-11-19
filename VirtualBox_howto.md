@@ -1,6 +1,6 @@
 # Download packages needed
 
-[Download Rocky Linux 9.8](https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-dvd.iso)
+[Download Rocky Linux 9.9](https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.8-x86_64-dvd.iso)
 
 [Download VirtualBox for Windows](https://download.virtualbox.org/virtualbox/7.2.20/VirtualBox-7.2.20-175154-Win.exe)
 
