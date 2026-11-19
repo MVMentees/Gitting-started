@@ -28,7 +28,9 @@
    ```
    sudo dnf install -y epel-release
    sudo dnf install -y podman-compose
-   sudo dnf -y install docker git telnet`
+   sudo dnf -y install docker git telnet
+   sudo dnf install httpd
+   sudo systemctl enable --now httpd
    ```
 
 5. Add ssh key to be able to communicate with github later
