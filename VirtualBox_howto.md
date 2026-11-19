@@ -74,6 +74,7 @@ See what address the VirtualBox Host-Only Ethernet Adapter has, mine was 192.168
 Check Enable Network Adapter
 Attached to    Host-only Adapter
 Leave other defaults and click [OK]
+```
 
 ## Start virtual machine and configure second network adapter
 
