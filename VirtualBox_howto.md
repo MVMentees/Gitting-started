@@ -68,7 +68,7 @@ See what address the VirtualBox Host-Only Ethernet Adapter has, mine was 192.168
 
 ## Add a network adapter to the MyRocketSoftwareDockers VM
 	
-* Click on the second picture on the right side which will redisplay the machines
+* Click on the second picture on the left side which will redisplay the machines
 * For the **MyRocketSoftwareDockers*  Settings >> Network >> Adapter 2
 ```
 Check Enable Network Adapter
