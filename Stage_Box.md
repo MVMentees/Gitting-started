@@ -29,7 +29,7 @@
    sudo dnf install -y epel-release
    sudo dnf install -y podman-compose
    sudo dnf -y install docker git telnet
-   sudo dnf install httpd
+   sudo dnf -y install httpd
    sudo systemctl enable --now httpd
    ```
 
