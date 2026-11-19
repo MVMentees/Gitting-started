@@ -24,14 +24,15 @@ Run Virtual Box
 VM Name   MyRocketSoftwareDockers
         VM Folder <take default>
         ISO Image c:...\Downloads\Rocky9....iso
-[Next]
+[Next] or could be just next section
 	User Name   dockeradmin
 	Password    Rocket123!
-[Next]
+[Next] or could be just next section
 	Base Memory    4096
   	Number of CPUs    1
 	Disk Size        60 GB
-[Next] [Finish]
+[Next] or could be just next section
+[Finish]
 ```
 
 ## Mount Rocky9 iso and restart
@@ -42,7 +43,7 @@ It will fail to boot, until you load the ISO
 ```
 click on the Rocky9 iso
 click Machine>>Reset
-Up arrow to Install Rocket Linux 9.8 and press Enter
+Up arrow to Install Rocket Linux 9.9 and press Enter
 Highlight English and English(United States) [Continue]
 Installation Destination [Done]
 User Creation
